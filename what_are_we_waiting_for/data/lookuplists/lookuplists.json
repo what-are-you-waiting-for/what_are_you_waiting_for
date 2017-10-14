@@ -6,7 +6,32 @@
   "micro_test_respiratory_virus_pcr": [], 
   "micro_test_c_difficile": [], 
   "micro_test_parasitaemia": [], 
-  "labtesttype": [], 
+  "labtesttype": [
+    {
+            "name": "Blood Test",
+            "synonyms": []
+        },
+        {
+            "name": "Imaging",
+            "synonyms": []
+        },
+        {
+            "name": "ECG",
+            "synonyms": []
+        },
+        {
+            "name": "EEG",
+            "synonyms": []
+        },
+        {
+            "name": "ECHO",
+            "synonyms": []
+        },
+        {
+            "name": "OTHER",
+            "synonyms": []
+        }
+  ],
   "micro_test_ebv_serology": [], 
   "micro_test_viral_load": [], 
   "drugfreq": [], 
