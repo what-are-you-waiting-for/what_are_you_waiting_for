@@ -252,7 +252,7 @@ DEFAULT_DOMAIN = 'http://what_are_we_waiting_for.com/'
 
 # Begins OPAL Settings you should edit !
 
-OPAL_BRAND_NAME = 'what_are_we_waiting_for'
+OPAL_BRAND_NAME = 'Waiting'
 VERSION_NUMBER  = '<0.0.1'
 
 REST_FRAMEWORK = {

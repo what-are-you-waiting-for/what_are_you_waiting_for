@@ -2,6 +2,8 @@
 what_are_we_waiting_for models.
 """
 from django.db.models import fields
+from opal.core.fields import ForeignKeyOrFreeText
+from opal.core import lookuplists
 
 from opal import models
 
@@ -15,7 +17,6 @@ class Allergies(models.Allergies): pass
 class Diagnosis(models.Diagnosis): pass
 class PastMedicalHistory(models.PastMedicalHistory): pass
 class Treatment(models.Treatment): pass
-class Investigation(models.Investigation): pass
 class SymptomComplex(models.SymptomComplex): pass
 class PatientConsultation(models.PatientConsultation): pass
 
@@ -26,3 +27,38 @@ class PatientConsultation(models.PatientConsultation): pass
 """
 End Opal core models
 """
+
+
+class LabTestType(lookuplists.LookupList):
+    pass
+
+
+class ImagingTestType(lookuplists.LookupList):
+    pass
+
+
+class SpecialistType(lookuplists.LookupList):
+    pass
+
+
+class AbstractTestModel(models.EpisodeSubrecord):
+    class meta:
+        abstract = True
+    requested = fields.DateTimeField()
+    received = fields.DateTimeField()
+
+
+class LabTest(AbstractTestModel):
+    test_type = ForeignKeyOrFreeText(LabTestType)
+
+
+class Imaging(AbstractTestModel):
+    test_type = ForeignKeyOrFreeText(ImagingTestType)
+
+
+class SpecialistReview(AbstractTestModel):
+    specialist_type = ForeignKeyOrFreeText(SpecialistType)
+
+
+class DischargeStep(models.EpisodeSubrecord):
+    pass

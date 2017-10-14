@@ -1,0 +1,11 @@
+{% extends 'detail/detail_base.html' %}
+{% load panels %}
+
+{% block left_column %}
+  {% record_panel models.LabTest %}
+  {% record_panel models.Imaging %}
+{% endblock %}
+{% block right_column %}
+  {% record_panel models.SpecialistReview %}
+  {% record_panel models.DischargeStep %}
+{% endblock %}

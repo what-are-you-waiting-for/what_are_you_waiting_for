@@ -9,7 +9,7 @@ from django.conf import settings
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('opal', '0032_auto_20171014_1527'),
+        ('opal', '0031_auto_20170719_1018'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
