@@ -1,0 +1,3 @@
+recursive-include what_are_we_waiting_for/static *
+recursive-include what_are_we_waiting_for/assets *
+recursive-include what_are_we_waiting_for/templates *
