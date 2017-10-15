@@ -21,6 +21,8 @@ pip install -r requirements.txt
 
 ./manage.py createsuperuser
 
+ ./manage.py load_lookup_lists
+ 
 ./manage.py runserver
 
 
