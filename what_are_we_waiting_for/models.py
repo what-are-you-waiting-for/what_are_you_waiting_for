@@ -44,6 +44,7 @@ class SpecialistType(lookuplists.LookupList):
 class LabTest(models.EpisodeSubrecord):
     _angular_service = 'RequestReceive'
     _title = "Investigation"
+    _icon = "fa fa-flask"
     test_type = ForeignKeyOrFreeText(LabTestType)
     requested_timestamp = fields.DateTimeField(null=True, blank=True)
     reviewed_timestamp = fields.DateTimeField(
@@ -55,6 +56,7 @@ class LabTest(models.EpisodeSubrecord):
 
 class Imaging(models.EpisodeSubrecord):
     _angular_service = 'RequestReceive'
+    _icon = "fa fa-picture-o"
     test_type = ForeignKeyOrFreeText(ImagingTestType)
     requested_timestamp = fields.DateTimeField(null=True, blank=True)
     reviewed_timestamp = fields.DateTimeField(null=True, blank=True)
@@ -64,6 +66,7 @@ class Imaging(models.EpisodeSubrecord):
 
 class SpecialistReview(models.EpisodeSubrecord):
     _angular_service = 'RequestReceive'
+    _icon = "fa fa-user-md"
     specialist_type = ForeignKeyOrFreeText(SpecialistType)
     requested_timestamp = fields.DateTimeField(null=True, blank=True)
     reviewed_timestamp = fields.DateTimeField(null=True, blank=True)
