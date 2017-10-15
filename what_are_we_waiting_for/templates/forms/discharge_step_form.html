@@ -1,4 +1,8 @@
 {% load forms %}
+
 {% input field="DischargeStep.discharge_type" %}
 {% datetimepicker field="DischargeStep.requested_timestamp" %}
 {% datetimepicker field="DischargeStep.received_timestamp" %}
+
+{%  radio field="DischargeStep.discharge_type" %}
+
