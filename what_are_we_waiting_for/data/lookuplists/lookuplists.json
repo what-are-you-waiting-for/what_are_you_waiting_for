@@ -178,12 +178,26 @@
   "micro_test_mcs": [],
   "transporttype": [
     {
-      "synonyms": ["Taxi", "Friend", "Family"], 
-      "name": "Own Transport"
-      },
-      {
+      "name": "Own Transport", 
+      "synonyms": ["Taxi", "Friend", "Family"]
+    },
+    {
       "synonyms": [], 
       "name": "Medical Transport"
-      }
+    }
+    ],
+  "destinationtype": [
+    { 
+      "synonyms": [], 
+      "name": "Home Check"
+    },
+    {
+      "synonyms": [], 
+      "name": "Community Bed"
+    }, 
+    {
+      "synonyms": [], 
+      "name": "Care Home"
+     } 
     ]
 }
