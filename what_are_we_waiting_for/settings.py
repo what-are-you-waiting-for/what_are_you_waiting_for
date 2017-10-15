@@ -162,6 +162,7 @@ INSTALLED_APPS = (
     'opal',
     'opal.core.search',
     'opal.core.pathway',
+    'trendy',
     'what_are_we_waiting_for',
     'django.contrib.admin',
 )

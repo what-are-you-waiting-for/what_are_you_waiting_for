@@ -1,0 +1,20 @@
+{% load trendy_visuals %}
+<div class="row">
+  <div class="col-md-6">
+    {% pie_chart "top_ten" obj_list models.LabTest.get_api_name field="test_type" %}
+  </div>
+  <div class="col-md-6">
+    {% pie_chart "top_ten" obj_list models.SpecialistReview.get_api_name field="specialist_type" %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    {% pie_chart "top_ten" obj_list models.Imaging.get_api_name field="test_type" %}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    {% bar_chart "total_duration" obj_list models.LabTest.get_api_name field="test_type" %}
+  </div>
+</div>
