@@ -16,4 +16,4 @@ python-dateutil==2.4.2
 django-celery==3.1.17
 celery==3.1.19
 -e git+https://github.com/openhealthcare/opal.git@v0.9.0#egg=opal
--e git+https://github.com/openhealthcare/opal-timeline.git@v0.1#egg=opal-timeline
+-e git+https://github.com/openhealthcare/opal-slacktheme.git@master#egg=opal-slacktheme

@@ -1,5 +1,4 @@
 {% load panels %}
-{% load timelines %}
 
 <div class="col-md-6">
   {% record_panel models.LabTest %}
@@ -9,8 +8,3 @@
   {% record_panel models.SpecialistReview %}
   {% record_panel models.DischargeStep %}
 </div>
-{% comment %}
-  <div class="col-md-12">
-    {% timeline "what_are_we_waiting_for_timeline" %}
-  </div>
-{% endcomment %}
