@@ -1,162 +1,179 @@
 {
-  "line_removal_reason": [],
-  "micro_test_single_test_pos_neg_equiv": [],
-  "micro_test_stool_parasitology_pcr": [],
-  "speciality": [],
-  "micro_test_respiratory_virus_pcr": [],
-  "micro_test_c_difficile": [],
-  "micro_test_parasitaemia": [],
+  "line_removal_reason": [], 
+  "micro_test_single_test_pos_neg_equiv": [], 
+  "micro_test_stool_parasitology_pcr": [], 
+  "speciality": [], 
+  "micro_test_respiratory_virus_pcr": [], 
+  "micro_test_c_difficile": [], 
+  "micro_test_parasitaemia": [], 
   "labtesttype": [
     {
-            "name": "Blood Test",
-            "synonyms": []
-        },
-        {
-            "name": "Imaging",
-            "synonyms": []
-        },
-        {
-            "name": "ECG",
-            "synonyms": []
-        },
-        {
-            "name": "EEG",
-            "synonyms": []
-        },
-        {
-            "name": "ECHO",
-            "synonyms": []
-        },
-        {
-            "name": "OTHER",
-            "synonyms": []
-        }
-  ],
-  "micro_test_ebv_serology": [],
-  "micro_test_viral_load": [],
-  "drugfreq": [],
+      "synonyms": [], 
+      "name": "Blood Test"
+    }, 
+    {
+      "synonyms": [], 
+      "name": "ECG"
+    }, 
+    {
+      "synonyms": [], 
+      "name": "ECHO"
+    }, 
+    {
+      "synonyms": [], 
+      "name": "EEG"
+    }, 
+    {
+      "synonyms": [], 
+      "name": "Imaging"
+    }, 
+    {
+      "synonyms": [], 
+      "name": "OTHER"
+    }
+  ], 
+  "micro_test_ebv_serology": [], 
+  "micro_test_viral_load": [], 
+  "drugfreq": [], 
   "line_type": [], 
-  "micro_test_hiv": [],
-  "duration": [],
-  "micro_test_csf_pcr": [],
-  "ethnicity": [],
-  "line_site": [],
-  "maritalstatus": [],
-  "micro_test_single_igg_test": [],
-  "line_complication": [],
-  "title": [],
-  "hospital": [],
-  "destination": [],
-  "travel_reason": [],
-  "micro_test_stool_pcr": [],
-  "micro_test_syphilis_serology": [],
-  "drugroute": [],
-  "symptom": [],
-  "clinical_advice_reason_for_interaction": [],
-  "antimicrobial": [],
-  "micro_test_single_test_pos_neg": [],
-  "micro_test_other": [],
-  "micro_test_leishmaniasis_pcr": [],
-  "micro_test_serology": [],
-  "referralorganisation": [],
+  "micro_test_hiv": [], 
+  "duration": [], 
+  "micro_test_csf_pcr": [], 
+  "ethnicity": [], 
+  "line_site": [], 
+  "maritalstatus": [], 
+  "micro_test_single_igg_test": [], 
+  "line_complication": [], 
+  "title": [], 
+  "hospital": [], 
+  "destination": [], 
+  "travel_reason": [], 
+  "micro_test_stool_pcr": [], 
+  "micro_test_syphilis_serology": [], 
+  "drugroute": [], 
+  "symptom": [], 
+  "clinical_advice_reason_for_interaction": [], 
+  "antimicrobial": [], 
+  "micro_test_single_test_pos_neg": [], 
+  "micro_test_other": [], 
+  "micro_test_leishmaniasis_pcr": [], 
+  "micro_test_serology": [], 
+  "referralorganisation": [], 
   "specialisttype": [
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Anaesthetics"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Cardiology"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Cardiothoracic"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Dermatology"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Ear, nose and throat"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "General"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Geriatrics"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Head and Neck Surgery"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Infectious disease"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Neurology"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Neurosurgery"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Obstetrics and gynaecology"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Oncology"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Ophthalmology"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Orthopaedic"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Paediatric"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Paediatrics"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Plastics"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Psychiatry"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Urology"
-    },
+    }, 
     {
-      "synonyms": [],
+      "synonyms": [], 
       "name": "Vascular"
     }
-  ],
-  "micro_test_swab_pcr": [],
-  "imagingtesttype": [],
-  "ward": [],
-  "antimicrobial_route": [],
-  "condition": [],
-  "microbiology_organism": [],
-  "antimicrobial_frequency": [],
-  "gender": [],
-  "drug": [],
-  "antimicrobial_adverse_event": [],
-  "referraltype": [],
-  "micro_test_hepititis_b_serology": [],
-  "patientconsultationreasonforinteraction": [],
+  ], 
+  "micro_test_swab_pcr": [], 
+  "imagingtesttype": [
+    {
+      "synonyms": [], 
+      "name": "CT"
+    }, 
+    {
+      "synonyms": [], 
+      "name": "MRI"
+    }, 
+    {
+      "synonyms": [], 
+      "name": "Ultrasound"
+    }, 
+    {
+      "synonyms": [], 
+      "name": "X-Ray"
+    }
+  ], 
+  "ward": [], 
+  "antimicrobial_route": [], 
+  "condition": [], 
+  "microbiology_organism": [], 
+  "antimicrobial_frequency": [], 
+  "gender": [], 
+  "drug": [], 
+  "antimicrobial_adverse_event": [], 
+  "referraltype": [], 
+  "micro_test_hepititis_b_serology": [], 
+  "patientconsultationreasonforinteraction": [], 
   "micro_test_mcs": []
 }
