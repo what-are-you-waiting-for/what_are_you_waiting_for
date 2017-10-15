@@ -35,7 +35,7 @@ If you get an error:
 
 django.db.migrations.graph.NodeNotFoundError: Migration what_are_we_waiting_for.0001_initial dependencies reference nonexistent parent node (u'opal', u'0032_auto_20171014_1527')
 
-rm  what_are_you_waiting_for/what_are_we_waiting_for/opal.sqlite
+rm what_are_we_waiting_for/opal.sqlite
 ./manage.py migrate
 ./manage.py runserver
 
