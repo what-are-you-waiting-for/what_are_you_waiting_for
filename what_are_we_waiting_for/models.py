@@ -93,4 +93,8 @@ class DischargeStep(models.EpisodeSubrecord):
     requested = fields.NullBooleanField()
     transport_type = ForeignKeyOrFreeText(TransportType)
     destination_type = ForeignKeyOrFreeText(DestinationType)
+    reviewed = fields.NullBooleanField()
+    reviewed_timestamp = fields.DateTimeField(
+        null=True, blank=True
+    )
 
