@@ -48,3 +48,7 @@ rm what_are_we_waiting_for/opal.sqlite
 
 If you get errors about module opal.pathway not found it is probably your version of python or environment, try with/without python2 or python3 on the abbove commands.
 
+Remember to reload the lookup lists after changing them:
+```
+./manage.py load_lookup_lists
+```
