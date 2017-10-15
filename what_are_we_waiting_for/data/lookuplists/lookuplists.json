@@ -175,5 +175,15 @@
   "referraltype": [], 
   "micro_test_hepititis_b_serology": [], 
   "patientconsultationreasonforinteraction": [], 
-  "micro_test_mcs": []
+  "micro_test_mcs": [],
+  "transporttype": [
+    {
+      "synonyms": ["Taxi", "Friend", "Family"], 
+      "name": "Own Transport"
+      },
+      {
+      "synonyms": [], 
+      "name": "Medical Transport"
+      }
+    ]
 }

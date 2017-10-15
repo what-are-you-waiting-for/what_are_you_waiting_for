@@ -39,6 +39,10 @@ class ImagingTestType(lookuplists.LookupList):
 
 class SpecialistType(lookuplists.LookupList):
     pass
+    
+    
+class TransportType(lookuplists.LookupList):
+    pass
 
 
 class LabTest(models.EpisodeSubrecord):
@@ -69,4 +73,9 @@ class SpecialistReview(models.EpisodeSubrecord):
 
 
 class DischargeStep(models.EpisodeSubrecord):
-    pass
+    _angular_service = 'RequestReceive'
+    specialist_type = ForeignKeyOrFreeText(TransportType)
+    requested_timestamp = fields.DateTimeField(null=True, blank=True)
+    received_timestamp = fields.DateTimeField(null=True, blank=True)
+    requested = fields.NullBooleanField()
+    received = fields.NullBooleanField()
