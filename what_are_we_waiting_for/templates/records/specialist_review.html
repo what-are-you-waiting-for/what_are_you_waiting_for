@@ -1,16 +1,15 @@
-<span ng-show="item.requested">
-    [[ item.requested | shortDateTime ]]
-   <br />
-</span>
-<span ng-show="item.received">
-    [[ item.received | shortDateTime ]]
-   <br />
-</span>
-<span ng-show="item.abstracttestmodel_ptr_id">
-    [[ item.abstracttestmodel_ptr_id ]]
-   <br />
-</span>
 <span ng-show="item.specialist_type">
-    [[ item.specialist_type ]]
-   <br />
+    <strong>[[ item.specialist_type ]]</strong>
+    <br />
+</span>
+<span ng-show="item.requested">
+    Requested: [[ item.requested_timestamp | shortDateTime ]]
+    <br />
+</span>
+<span ng-show="item.reviewed">
+    reviewed: [[ item.received_timestamp | shortDateTime ]]
+    <br />
+</span>
+<span ng-show="item.requested && !item.reviewed">
+    <strong>Pending</strong>
 </span>

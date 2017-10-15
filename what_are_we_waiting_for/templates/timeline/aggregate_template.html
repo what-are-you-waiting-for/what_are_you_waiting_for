@@ -1,0 +1,13 @@
+<div ng-repeat="timelineElement in timeline.getElementsForElementDefinition(timeline.indexedTimeLineElements[date], elementDefinition)">
+  <span ng-show="$index !== 1">
+    <div ng-repeat="item in [timelineElement.subrecord]">
+      <a class="pointer" ng-click="editItem(item)">
+        {% for template in timeline.get_templates %}
+          <div ng-show="elementDefinition.template === '{{ template }}'">
+            {% include template %}
+          </div>
+        {% endfor %}
+      </a>
+    </div>
+  </span>
+</div>

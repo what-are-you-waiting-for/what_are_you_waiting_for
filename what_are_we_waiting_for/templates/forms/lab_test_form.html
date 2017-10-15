@@ -1,4 +1,10 @@
 {% load forms %}
 {% input field="LabTest.test_type" %}
-{% datetimepicker field="LabTest.requested_timestamp" %}
-{% datetimepicker field="LabTest.received_timestamp" %}
+{% checkbox field="LabTest.requested" %}
+<span ng-show="editing.{{ models.LabTest.get_api_name }}.requested">
+  {% datetimepicker field="LabTest.requested_timestamp" %}
+</span>
+{% checkbox field="LabTest.reviewed" %}
+<span ng-show="editing.{{ models.LabTest.get_api_name }}.reviewed">
+  {% datetimepicker field="LabTest.reviewed_timestamp" %}
+</span>

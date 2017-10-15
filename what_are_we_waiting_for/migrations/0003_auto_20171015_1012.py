@@ -7,7 +7,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('what_are_we_waiting_for', '0032_merge'),
+        ('what_are_we_waiting_for', '0002_auto_20171015_0933'),
     ]
 
     operations = [

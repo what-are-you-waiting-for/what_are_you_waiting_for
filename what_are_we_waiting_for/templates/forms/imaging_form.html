@@ -1,4 +1,10 @@
 {% load forms %}
 {% input field="Imaging.test_type" %}
-{% datetimepicker field="Imaging.requested_timestamp" %}
-{% datetimepicker field="Imaging.received_timestamp" %}
+{% checkbox field="Imaging.requested" %}
+<span ng-show="editing.{{ models.Imaging.get_api_name }}.requested">
+  {% datetimepicker field="Imaging.requested_timestamp" %}
+</span>
+{% checkbox field="Imaging.reviewed" %}
+<span ng-show="editing.{{ models.Imaging.get_api_name }}.reviewed">
+  {% datetimepicker field="Imaging.reviewed_timestamp" %}
+</span>
