@@ -41,23 +41,36 @@ class SpecialistType(lookuplists.LookupList):
     pass
 
 
-class AbstractTestModel(models.EpisodeSubrecord):
-    class meta:
-        abstract = True
-    requested = fields.DateTimeField()
-    received = fields.DateTimeField()
+# class AbstractTestModel(object):
+#     class Meta:
+#         abstract = True
+#     requested_timestamp = fields.DateTimeField(null=True, blank=True)
+#     received_timestamp = fields.DateTimeField(null=True, blank=True)
+#     requested = fields.NullBooleanField()
+#     received = fields.NullBooleanField()
 
-
-class LabTest(AbstractTestModel):
+class LabTest(models.EpisodeSubrecord):
     test_type = ForeignKeyOrFreeText(LabTestType)
+    requested_timestamp = fields.DateTimeField(null=True, blank=True)
+    received_timestamp = fields.DateTimeField(null=True, blank=True)
+    requested = fields.NullBooleanField()
+    received = fields.NullBooleanField()
 
 
-class Imaging(AbstractTestModel):
+class Imaging(models.EpisodeSubrecord):
     test_type = ForeignKeyOrFreeText(ImagingTestType)
+    requested_timestamp = fields.DateTimeField(null=True, blank=True)
+    received_timestamp = fields.DateTimeField(null=True, blank=True)
+    requested = fields.NullBooleanField()
+    received = fields.NullBooleanField()
 
 
-class SpecialistReview(AbstractTestModel):
+class SpecialistReview(models.EpisodeSubrecord):
     specialist_type = ForeignKeyOrFreeText(SpecialistType)
+    requested_timestamp = fields.DateTimeField(null=True, blank=True)
+    received_timestamp = fields.DateTimeField(null=True, blank=True)
+    requested = fields.NullBooleanField()
+    received = fields.NullBooleanField()
 
 
 class DischargeStep(models.EpisodeSubrecord):
