@@ -1,4 +1,10 @@
 {% load forms %}
 {% input field="SpecialistReview.specialist_type" %}
-{% datetimepicker field="SpecialistReview.requested_timestamp" %}
-{% datetimepicker field="SpecialistReview.received_timestamp" %}
+{% checkbox field="SpecialistReview.requested" %}
+<span ng-show="editing.{{ models.SpecialistReview.get_api_name }}.requested">
+  {% datetimepicker field="SpecialistReview.requested_timestamp" %}
+</span>
+{% checkbox field="SpecialistReview.reviewed" %}
+<span ng-show="editing.{{ models.SpecialistReview.get_api_name }}.reviewed">
+  {% datetimepicker field="SpecialistReview.reviewed_timestamp" %}
+</span>

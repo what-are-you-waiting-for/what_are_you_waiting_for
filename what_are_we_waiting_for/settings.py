@@ -160,6 +160,7 @@ INSTALLED_APPS = (
     'rest_framework.authtoken',
     'compressor',
     'opal',
+    'timeline',
     'opal.core.search',
     'opal.core.pathway',
     'what_are_we_waiting_for',

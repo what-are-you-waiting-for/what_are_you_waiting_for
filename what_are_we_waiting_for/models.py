@@ -43,29 +43,32 @@ class SpecialistType(lookuplists.LookupList):
 
 class LabTest(models.EpisodeSubrecord):
     _angular_service = 'RequestReceive'
+    _title = "Investigation"
     test_type = ForeignKeyOrFreeText(LabTestType)
     requested_timestamp = fields.DateTimeField(null=True, blank=True)
-    received_timestamp = fields.DateTimeField(null=True, blank=True)
+    reviewed_timestamp = fields.DateTimeField(
+        null=True, blank=True
+    )
     requested = fields.NullBooleanField()
-    received = fields.NullBooleanField()
+    reviewed = fields.NullBooleanField()
 
 
 class Imaging(models.EpisodeSubrecord):
     _angular_service = 'RequestReceive'
     test_type = ForeignKeyOrFreeText(ImagingTestType)
     requested_timestamp = fields.DateTimeField(null=True, blank=True)
-    received_timestamp = fields.DateTimeField(null=True, blank=True)
+    reviewed_timestamp = fields.DateTimeField(null=True, blank=True)
     requested = fields.NullBooleanField()
-    received = fields.NullBooleanField()
+    reviewed = fields.NullBooleanField()
 
 
 class SpecialistReview(models.EpisodeSubrecord):
     _angular_service = 'RequestReceive'
     specialist_type = ForeignKeyOrFreeText(SpecialistType)
     requested_timestamp = fields.DateTimeField(null=True, blank=True)
-    received_timestamp = fields.DateTimeField(null=True, blank=True)
+    reviewed_timestamp = fields.DateTimeField(null=True, blank=True)
     requested = fields.NullBooleanField()
-    received = fields.NullBooleanField()
+    reviewed = fields.NullBooleanField()
 
 
 class DischargeStep(models.EpisodeSubrecord):
