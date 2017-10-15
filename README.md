@@ -50,5 +50,5 @@ If you get errors about module opal.pathway not found it is probably your versio
 
 Remember to reload the lookup lists after changing them:
 ```
-./manage.pload_lookup_lists
+./manage.py load_lookup_lists
 ```
