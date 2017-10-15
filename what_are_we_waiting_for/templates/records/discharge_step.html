@@ -10,3 +10,14 @@
     <strong>Social Pathway</strong>
     <br />
 </span>
+<span ng-show="item.requested">
+    Requested: [[ item.requested_timestamp | shortDateTime ]]
+    <br />
+</span>
+<span ng-show="item.reviewed">
+    reviewed: [[ item.reviewed_timestamp | shortDateTime ]]
+    <br />
+</span>
+<span ng-show="item.requested && !item.reviewed">
+    <strong>Pending</strong>
+</span>
