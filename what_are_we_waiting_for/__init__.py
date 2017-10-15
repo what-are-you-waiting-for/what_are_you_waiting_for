@@ -12,3 +12,7 @@ class Application(application.OpalApplication):
         # Uncomment this if you want to implement custom dynamic flows.
         # 'js/what_are_we_waiting_for/flow.js',
     ]
+
+    styles = [
+        "css/rbhl.css",
+    ]
