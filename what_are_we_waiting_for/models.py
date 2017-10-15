@@ -41,15 +41,8 @@ class SpecialistType(lookuplists.LookupList):
     pass
 
 
-# class AbstractTestModel(object):
-#     class Meta:
-#         abstract = True
-#     requested_timestamp = fields.DateTimeField(null=True, blank=True)
-#     received_timestamp = fields.DateTimeField(null=True, blank=True)
-#     requested = fields.NullBooleanField()
-#     received = fields.NullBooleanField()
-
 class LabTest(models.EpisodeSubrecord):
+    _angular_service = 'RequestReceive'
     test_type = ForeignKeyOrFreeText(LabTestType)
     requested_timestamp = fields.DateTimeField(null=True, blank=True)
     received_timestamp = fields.DateTimeField(null=True, blank=True)
@@ -58,6 +51,7 @@ class LabTest(models.EpisodeSubrecord):
 
 
 class Imaging(models.EpisodeSubrecord):
+    _angular_service = 'RequestReceive'
     test_type = ForeignKeyOrFreeText(ImagingTestType)
     requested_timestamp = fields.DateTimeField(null=True, blank=True)
     received_timestamp = fields.DateTimeField(null=True, blank=True)
@@ -66,6 +60,7 @@ class Imaging(models.EpisodeSubrecord):
 
 
 class SpecialistReview(models.EpisodeSubrecord):
+    _angular_service = 'RequestReceive'
     specialist_type = ForeignKeyOrFreeText(SpecialistType)
     requested_timestamp = fields.DateTimeField(null=True, blank=True)
     received_timestamp = fields.DateTimeField(null=True, blank=True)

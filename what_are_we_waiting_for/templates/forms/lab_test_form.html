@@ -1,15 +1,4 @@
 {% load forms %}
 {% input field="LabTest.test_type" %}
-
-<span ng-hide="editing.lab_test.requested">
-  <div class="row">
-    <div class="col-sm-8 col-sm-push-3">Requested</div>
-  </div>
-  {% datetimepicker field="LabTest.requested" %}
-</span>
-<span ng-show="editing.lab_test.requested">
-  <div class="row">
-    <div class="col-sm-8 col-sm-push-3">Received</div>
-  </div>
-  {% datetimepicker field="LabTest.received" %}
-</span>
+{% datetimepicker field="LabTest.requested_timestamp" %}
+{% datetimepicker field="LabTest.received_timestamp" %}
