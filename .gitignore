@@ -11,3 +11,5 @@
 .coverage
 htmlcov
 libpeerconnection.log
+.idea
+.DS_Store

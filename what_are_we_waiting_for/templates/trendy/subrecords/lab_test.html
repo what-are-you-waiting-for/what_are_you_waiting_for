@@ -1,20 +1,58 @@
 {% load trendy_visuals %}
-<div class="row">
-  <div class="col-md-6">
-    {% pie_chart "top_ten" obj_list models.LabTest.get_api_name field="test_type" %}
-  </div>
-  <div class="col-md-6">
-    {% pie_chart "top_ten" obj_list models.SpecialistReview.get_api_name field="specialist_type" %}
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-6">
-    {% pie_chart "top_ten" obj_list models.Imaging.get_api_name field="test_type" %}
-  </div>
-</div>
-
-<div class="row">
+<div style="background-color: #4676c5;" class="row">
   <div class="col-md-12">
-    {% bar_chart "total_duration" obj_list models.LabTest.get_api_name field="test_type" %}
+    <a href="/#/list/all_patients"><h4 style="color: white">Home</h4></a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10 col-md-push-1">
+    <h3>Investigations</h3>
+  </div>
+</div>
+<div class="row">
+  <div style="font-size: 12px;" class="col-md-3 col-md-push-1">
+    {% pie_chart "top_ten" obj_list models.LabTest.get_api_name field="test_type" label="Most used lab tests" %}
+  </div>
+  <div class="col-md-7 col-md-push-1">
+    {% bar_chart "total_duration" obj_list models.LabTest.get_api_name field="test_type" label="Time spent waiting on lab tests" %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10 col-md-push-1">
+    <h3>Imaging</h3>
+  </div>
+</div>
+<div class="row">
+  <div style="font-size: 12px;" class="col-md-3 col-md-push-1">
+    {% pie_chart "top_ten" obj_list models.Imaging.get_api_name field="test_type" label="Most used imaging techniques" %}
+  </div>
+  <div class="col-md-7 col-md-push-1">
+    {% bar_chart "total_duration" obj_list models.Imaging.get_api_name field="test_type" label="Time spent waiting on imaging" %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10 col-md-push-1">
+    <h3>Specialists</h3>
+  </div>
+</div>
+<div class="row">
+  <div style="font-size: 12px;" class="col-md-3 col-md-push-1">
+    {% pie_chart "top_ten" obj_list models.SpecialistReview.get_api_name field="specialist_type" label="Most called on specialists" %}
+  </div>
+  <div class="col-md-7 col-md-push-1">
+    {% bar_chart "total_duration" obj_list models.SpecialistReview.get_api_name field="specialist_type" label="Time spent waiting on specialists" %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10 col-md-push-1">
+    <h3>Destinations</h3>
+  </div>
+</div>
+<div class="row">
+  <div style="font-size: 12px;" class="col-md-3 col-md-push-1">
+    {% pie_chart "top_ten" obj_list models.DischargeStep.get_api_name field="transport_type" label="Most used destinations" %}
+  </div>
+  <div class="col-md-7 col-md-push-1">
+    {% bar_chart "total_duration" obj_list models.DischargeStep.get_api_name field="transport_type" label="Time spent waiting on transport" %}
   </div>
 </div>

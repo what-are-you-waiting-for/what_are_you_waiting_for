@@ -49,6 +49,10 @@ class DestinationType(lookuplists.LookupList):
     pass
 
 
+class DischargeType(lookuplists.LookupList):
+    pass
+
+
 class LabTest(models.EpisodeSubrecord):
     _angular_service = 'RequestReceive'
     _title = "Investigation"
@@ -84,7 +88,13 @@ class SpecialistReview(models.EpisodeSubrecord):
 
 class DischargeStep(models.EpisodeSubrecord):
     _angular_service = 'RequestReceive'
-    discharge_type = ForeignKeyOrFreeText(TransportType)
+    discharge_type = ForeignKeyOrFreeText(DischargeType)
     requested_timestamp = fields.DateTimeField(null=True, blank=True)
     received_timestamp = fields.DateTimeField(null=True, blank=True)
     requested = fields.NullBooleanField()
+    transport_type = ForeignKeyOrFreeText(TransportType)
+    destination_type = ForeignKeyOrFreeText(DestinationType)
+    reviewed = fields.NullBooleanField()
+    reviewed_timestamp = fields.DateTimeField(
+        null=True, blank=True
+    )

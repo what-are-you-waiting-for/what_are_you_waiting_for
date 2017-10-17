@@ -1,8 +1,22 @@
 {% load forms %}
+{% radio field="DischargeStep.discharge_type" %}
 
-{% input field="DischargeStep.discharge_type" %}
-{% datetimepicker field="DischargeStep.requested_timestamp" %}
-{% datetimepicker field="DischargeStep.received_timestamp" %}
+<div ng-show="editing.discharge_step.discharge_type == 'Transport'">
+{% input field="DischargeStep.transport_type" %}
+</div>
+<div ng-show="editing.discharge_step.discharge_type == 'Destination'">
+{% input field="DischargeStep.destination_type" %}
+</div>
 
-{%  radio field="DischargeStep.discharge_type" %}
 
+
+<div ng-show="editing.discharge_step.discharge_type != null">
+{% checkbox field="DischargeStep.requested" %}
+<span ng-show="editing.{{ models.DischargeStep.get_api_name }}.requested">
+  {% datetimepicker field="DischargeStep.requested_timestamp" %}
+</span>
+{% checkbox field="DischargeStep.reviewed" %}
+<span ng-show="editing.{{ models.DischargeStep.get_api_name }}.reviewed">
+  {% datetimepicker field="DischargeStep.reviewed_timestamp" %}
+</span>
+</div>

@@ -6,8 +6,8 @@ angular.module('opal.records').factory('RequestReceive', function(){
     if(!record.requested_timestamp){
       record.requested_timestamp = moment();
     }
-    if(!record.received_timestamp){
-      record.received_timestamp = moment();
+    if(!record.reviewed_timestamp){
+      record.reviewed_timestamp = moment();
     }
     return record;
   }

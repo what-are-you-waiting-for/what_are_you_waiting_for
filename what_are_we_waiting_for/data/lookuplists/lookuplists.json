@@ -198,6 +198,20 @@
     {
       "synonyms": [], 
       "name": "Care Home"
-     } 
+     }
+     ],
+  "dischargetype": [
+    { 
+      "synonyms": [], 
+      "name": "Transport"
+    },
+    {
+      "synonyms": [], 
+      "name": "Destination"
+    }, 
+    {
+      "synonyms": [], 
+      "name": "Social Pathway"
+     }
     ]
 }
