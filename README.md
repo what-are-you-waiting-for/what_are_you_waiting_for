@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ./manage.py createsuperuser
 
  ./manage.py load_lookup_lists
- 
+
 ./manage.py runserver
 
 ```
@@ -51,4 +51,12 @@ If you get errors about module opal.pathway not found it is probably your versio
 Remember to reload the lookup lists after changing them:
 ```
 ./manage.py load_lookup_lists
+```
+
+
+Some additions to install on Ubuntu
+```
+sudo apt-get install python-pip python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg8-dev zlib1g-dev
+
+sudo pip install -r requirements.txt
 ```
